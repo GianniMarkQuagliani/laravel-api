@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\PageController;
+use App\Http\Controllers\Api\PageContoller;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +15,4 @@ use App\Http\Controllers\Api\PageController;
 |
 */
 
-Route::get('/posts', [PageController::class, 'index']);
+Route::get('/posts', [PageContoller::class, 'index']);
