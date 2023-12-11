@@ -16,3 +16,5 @@ use App\Http\Controllers\Api\PageContoller;
 */
 
 Route::get('/posts', [PageContoller::class, 'index']);
+
+Route::get('/posts/get-post/{slug}', [PageContoller::class, 'getProjectBySlug']);

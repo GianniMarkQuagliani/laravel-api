@@ -13,4 +13,9 @@ class PageContoller extends Controller
 
         return response()->json($posts);
     }
+
+    public function getProjectBySlug($slug){
+        $post = Post::where('slug', $slug)->with('category','tags')->first();
+        return response()->json($post);
+    }
 }
